@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "category": "Hello World",
+        "category": "",
         "title": "Hello World",
         "slug": "hello-world",
         "author": {
