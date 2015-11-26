@@ -11,8 +11,8 @@
                     <a href="#!/tag/{{tag}}">{{tag}}</a>&nbsp;
                 </span>
 
-                <span>Category:</span>
-                <a href="#!/category/{{blog.category}}">{{blog.category}}</a>&nbsp;
+                <span ng-show="blog.category">Category:</span>
+                <a ng-show="blog.category" href="#!/category/{{blog.category}}">{{blog.category}}</a>&nbsp;
             </section>
         </header>
 
