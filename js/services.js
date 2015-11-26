@@ -68,7 +68,7 @@ angular.module('app.services', [])
                 var blog_list = resp.data;
                 for (var i in blog_list) {
                     var found = false;
-                    for(var k in category_list) {
+                    for (var k in category_list) {
                         var c = category_list[k];
                         if (c.title == blog_list[i].category) {
                             c.count = c.count + 1;
@@ -77,13 +77,14 @@ angular.module('app.services', [])
                         }
                     }
                     if (found == false) {
-                        category_list.push({
-                            title: blog_list[i].category,
-                            count: 1
-                        });
+                        if (blog_list[i].category != "") {
+                            category_list.push({
+                                title: blog_list[i].category,
+                                count: 1
+                            });
+                        }
                     }
                 }
-                console.log(category_list);
                 return category_list;
             });
         };
