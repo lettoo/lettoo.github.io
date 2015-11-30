@@ -20,5 +20,16 @@
         "post_date": "2015-11-30",
         "summary": "MarkDown",
         "content_md_url": "content/20151130/markdown.md"
+    },
+    {
+        "id": 3,
+        "category": "Misc",
+        "title": "javascript学习笔记1",
+        "slug": "leanJavascript",
+        "author": "xiaosen-chen",
+        "tags": ["test", "github"],
+        "post_date": "2015-11-30",
+        "summary": "javascript基础",
+        "content_md_url": "content/20151130/learn_javascript1.md"
     }
 ]
