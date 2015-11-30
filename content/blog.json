@@ -4,13 +4,7 @@
         "category": "",
         "title": "Hello World",
         "slug": "hello-world",
-        "author": {
-            "slug":"jeffrey-hu",
-            "name": "Jeffrey Hu",
-            "avatar_url": "//www.gravatar.com/avatar/b02772de5f241e1ead0d812d6d63b57b?d=404&amp;s=250",
-            "email": "zhiwehu@gmail.com",
-            "link": "//github.com/zhiwehu"
-        },
+        "author": "jeffrey-hu",
         "tags": ["angular", "github"],
         "post_date": "2015-11-26",
         "summary": "A new blog",
@@ -21,13 +15,7 @@
         "category": "",
         "title": "MarkDown",
         "slug": "markdown",
-        "author": {
-            "slug":"mingyu-gu",
-            "name": "Mingyu Gu",
-            "avatar_url": "//avatars1.githubusercontent.com/u/3753924?v=3&amp;s=460",
-            "email": "mingyugu0410@gmail.com",
-            "link": "//github.com/mygu"
-        },
+        "author": "mingyu-gu",
         "tags": ["grammar", "github"],
         "post_date": "2015-11-30",
         "summary": "MarkDown",

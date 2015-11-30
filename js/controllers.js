@@ -3,7 +3,7 @@
 /* Controllers */
 
 angular.module('app.controllers', [])
-    .controller('AppCtrl', ['$scope', 'blogService', function ($scope, blogService) {
+    .controller('AppCtrl', ['$scope', 'blogService', '$rootScope', function ($scope, blogService, $rootScope) {
         $scope.app = {
             title: 'Lettoo',
             sub_title: 'Thoughts, stories and ideas.',
@@ -11,8 +11,12 @@ angular.module('app.controllers', [])
             disqus_shortname: 'lettoo'
         };
 
-        blogService.get_category_list().then(function(category_list){
+        blogService.get_category_list().then(function (category_list) {
             $scope.category_list = category_list;
+        });
+
+        blogService.get_authors().then(function (authors) {
+            $rootScope.authors = authors;
         });
     }])
 
@@ -27,19 +31,39 @@ angular.module('app.controllers', [])
             $scope.currentPage = 0;
 
             if (tag) {
-                blogService.get_tag_blog_list(tag).then(function(blog_list){
+                blogService.get_tag_blog_list(tag).then(function (blog_list) {
+                    for (var i in blog_list) {
+                        var author_slug = blog_list[i].author;
+                        var author = $rootScope.authors[author_slug];
+                        blog_list[i].author = author;
+                    }
                     $scope.blog_list = blog_list;
                 });
             } else if (author) {
-                blogService.get_author_blog_list(author).then(function(blog_list){
+                blogService.get_author_blog_list(author).then(function (blog_list) {
+                    for (var i in blog_list) {
+                        var author_slug = blog_list[i].author;
+                        var author = $rootScope.authors[author_slug];
+                        blog_list[i].author = author;
+                    }
                     $scope.blog_list = blog_list;
                 });
             } else if (category) {
-                blogService.get_category_blog_list(category).then(function(blog_list){
+                blogService.get_category_blog_list(category).then(function (blog_list) {
+                    for (var i in blog_list) {
+                        var author_slug = blog_list[i].author;
+                        var author = $rootScope.authors[author_slug];
+                        blog_list[i].author = author;
+                    }
                     $scope.blog_list = blog_list;
                 });
             } else {
                 blogService.get_blog_list().then(function (blog_list) {
+                    for (var i in blog_list) {
+                        var author_slug = blog_list[i].author;
+                        var author = $rootScope.authors[author_slug];
+                        blog_list[i].author = author;
+                    }
                     $scope.blog_list = blog_list;
                 });
             }
@@ -80,7 +104,7 @@ angular.module('app.controllers', [])
             var slug = $routeParams.slug;
             $scope.contentLoaded = false;
 
-            blogService.get_blog(slug).then(function(blog){
+            blogService.get_blog(slug).then(function (blog) {
                 $scope.blog = blog;
                 $scope.contentLoaded = true;
             });

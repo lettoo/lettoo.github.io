@@ -41,7 +41,7 @@ angular.module('app.services', [])
                 var result = [];
                 var blog_list = resp.data;
                 for (var i in blog_list) {
-                    if (blog_list[i].author.slug == author) {
+                    if (blog_list[i].author == author) {
                         result.push(blog_list[i]);
                     }
                 }
@@ -86,6 +86,12 @@ angular.module('app.services', [])
                     }
                 }
                 return category_list;
+            });
+        };
+
+        service.get_authors = function () {
+            return $http.get('content/author.json').then(function (resp) {
+                return resp.data;
             });
         };
 
