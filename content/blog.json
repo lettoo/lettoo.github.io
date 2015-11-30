@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "category": "",
+        "category": "Misc",
         "title": "Hello World",
         "slug": "hello-world",
         "author": "jeffrey-hu",
@@ -12,7 +12,7 @@
     },
     {
         "id": 2,
-        "category": "",
+        "category": "Misc",
         "title": "MarkDown",
         "slug": "markdown",
         "author": "mingyu-gu",
