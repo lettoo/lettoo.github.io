@@ -1,5 +1,3 @@
-##javascript学习笔记1
----
 ###javascript数据类型
 - 原始类型
  1. 数字类型
