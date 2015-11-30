@@ -105,6 +105,9 @@ angular.module('app.controllers', [])
             $scope.contentLoaded = false;
 
             blogService.get_blog(slug).then(function (blog) {
+                var author_slug = blog.author;
+                var author = $rootScope.authors[author_slug];
+                blog.author = author;
                 $scope.blog = blog;
                 $scope.contentLoaded = true;
             });
