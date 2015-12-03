@@ -1,16 +1,16 @@
 ### 1. 什么是React
 一个用于创建用户界面的JavaScript库。
-> * [官方网站](http://facebook.github.io/react/)
-> * [中文网站](http://reactjs.cn/)：从版本号来看，这个网站更新的不快。
+* [官方网站](http://facebook.github.io/react/)
+* [中文网站](http://reactjs.cn/)：从版本号来看，这个网站更新的不快。
 
 ### 2. 为什么要学习React
-> * 作为一个后端开发来说，了解并掌握一门新的前端技术，达成自己full-stack的目标。
-> * 作为后期使用[React Native](http://facebook.github.io/react-native/)的基础。
+* 作为一个后端开发来说，了解并掌握一门新的前端技术，达成自己full-stack的目标。
+* 作为后期使用[React Native](http://facebook.github.io/react-native/)的基础。
 
 ### 3. 学习React硬件环境准备
-> * 推荐使用Macbook Pro进行开发
-> * 找一个安静的地方，泡好茶，播放轻柔背景音乐
-> * 最好有一个完整的下午时间，关闭手机，进入免打扰模式
+* 推荐使用Macbook Pro进行开发
+* 找一个安静的地方，泡好茶，播放轻柔背景音乐
+* 最好有一个完整的下午时间，关闭手机，进入免打扰模式
 
 ### 4. 学习React软件环境准备
 > 前提环境，在电脑上安装好Node.js[^nodejs]和npm[^npm]。可以使用以下命令来验证是否安装，以下是我的电脑Node.js和npm版本：
