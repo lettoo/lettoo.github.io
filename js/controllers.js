@@ -110,14 +110,12 @@ angular.module('app.controllers', [])
                 blog.author = author;
                 $scope.blog = blog;
                 $scope.contentLoaded = true;
+
+                blogService.read_blog_content($scope.blog.content_md_url).then(function (d) {
+                    $scope.blog_content = d;
+                });
             });
 
-            $scope.content_md_url = function (blog) {
-                if (blog) {
-                    return blog.content_md_url;
-                } else {
-                    return '';
-                }
-            }
+
         }])
 ;

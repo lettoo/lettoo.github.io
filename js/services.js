@@ -23,6 +23,12 @@ angular.module('app.services', [])
             });
         };
 
+        service.read_blog_content = function (url) {
+            return $http.get(url).then(function (resp) {
+                return resp.data;
+            });
+        };
+
         service.get_tag_blog_list = function (tag) {
             return $http.get('content/blog.json').then(function (resp) {
                 var result = [];

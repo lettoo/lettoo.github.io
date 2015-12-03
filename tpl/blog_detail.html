@@ -17,13 +17,11 @@
         </header>
 
         <section class="post-content">
-            <div marked ng-include="content_md_url(blog)">
+            <div marked="blog_content">
             </div>
         </section>
 
         <footer class="post-footer">
-
-
             <figure class="author-image">
                 <a class="img" href="#!/author/{{blog.author.slug}}/"
                    style="background-image: url({{blog.author.avatar_url}})">

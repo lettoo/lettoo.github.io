@@ -23,13 +23,25 @@
     },
     {
         "id": 3,
-        "category": "Misc",
+        "category": "前端",
         "title": "javascript学习笔记1",
         "slug": "leanJavascript",
         "author": "xiaosen-chen",
-        "tags": ["test", "github"],
+        "tags": ["javascript"],
         "post_date": "2015-11-30",
         "summary": "javascript基础",
         "content_md_url": "content/20151130/learn_javascript1.md"
+    },
+
+    {
+        "id": 4,
+        "category": "前端",
+        "title": "React学习笔记1",
+        "slug": "learning-react-1",
+        "author": "jeffrey-hu",
+        "tags": ["javascript", "react"],
+        "post_date": "2015-12-03",
+        "summary": "从零开始学习React",
+        "content_md_url": "content/20151203/learning_react_1.md"
     }
 ]
