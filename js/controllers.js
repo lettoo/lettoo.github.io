@@ -109,10 +109,10 @@ angular.module('app.controllers', [])
                 var author = $rootScope.authors[author_slug];
                 blog.author = author;
                 $scope.blog = blog;
-                $scope.contentLoaded = true;
 
                 blogService.read_blog_content($scope.blog.content_md_url).then(function (d) {
                     $scope.blog_content = d;
+                    $scope.contentLoaded = true;
                 });
             });
 
