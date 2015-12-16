@@ -16,9 +16,7 @@
 接下来我们来逐段分析代码。
 
 ### 严格模式 ###
-
 ----------
-
 
     'use strict';
 
@@ -31,7 +29,6 @@
  - 提高编译器效率，增加运行速度
 
 ### 引入组件 ###
-
 ----------
 
     var React = require('react-native');
@@ -45,7 +42,6 @@
 首先引入react-native。然后通过对象的解构赋值方法来批量获取对象的属性并一次赋值给多个变量。
 
 ### 定义主入口类 ###
-
 ----------
 
     var AwesomeProject = React.createClass({
@@ -72,7 +68,6 @@
 我们看到首先使用了一个`<View>`块，然后在这个View块中我们有三个`<Text>`块。顾名思义，`<View>`块代表一个容器，`<Text>`块分别显示三段文字。注意我们使用了`style={styles.container}`这样的方式，来定义样式，React Native并不能直接使用css来定义样式，而是使用了一个`StyleSheet`对象来定义样式。
 
 ### 定义样式 ###
-
 ----------
 
     var styles = StyleSheet.create({
@@ -97,9 +92,7 @@
 在上段代码中，我们使用了`StyleSheet.create`来创建了一个`styles`，在这个`styles`样式中，我们定义了`container`，`welcome`和`instructions`三个样式，样式的定义和css语法差不多，注意第一个样式`container`我们使用了flexbox布局，详细的flexbox的布局语法请参考阮一锋老师的blog: http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
 ### 注册组件 ###
-
 ----------
-
 
     AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
 
