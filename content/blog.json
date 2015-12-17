@@ -67,5 +67,17 @@
         "post_date": "2015-12-16",
         "summary": "React Native 学习笔记(2)",
         "content_md_url": "content/20151216/react-native-2.md"
+    },
+
+    {
+        "id": 7,
+        "category": "前端",
+        "title": "React Native 学习笔记(3)",
+        "slug": "react-native-3",
+        "author": "jeffrey-hu",
+        "tags": ["JavaScript", "react", "react-native", "iOS"],
+        "post_date": "2015-12-17",
+        "summary": "React Native 学习笔记(3)",
+        "content_md_url": "content/20151217/react-native-3.md"
     }
 ]

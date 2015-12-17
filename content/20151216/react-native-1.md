@@ -1,5 +1,3 @@
-# React Native 学习笔记(1)
-
 ----------
 
 > 本学习笔记是跟随React Native 官网文档和教程：https://facebook.github.io/react-native 学习过程中所记。
