@@ -40,8 +40,8 @@
     },
     
 
-> 关于fetch API的使用，建议读一读这里：https://developer.mozilla.org/en/docs/Web/API/Fetch_API
-> 这里使用了ES6的箭头函数，`(response) => response.json()`的写法等同于`function(response) {return response.json();}`
+> - 关于fetch API的使用，建议读一读这里：https://developer.mozilla.org/en/docs/Web/API/Fetch_API
+> - 这里使用了ES6的箭头函数，`(response) => response.json()`的写法等同于`function(response) {return response.json();}`
 
     (responseData) => {
         this.setState({
