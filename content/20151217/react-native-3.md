@@ -125,6 +125,6 @@ Ok，这样我们看到图片显示出来了。
 ![此处输入图片的描述][3]
 
 
-  [1]: ./simulator_no_image.png
-  [2]: ./simulator_has_image.png
-  [3]: ./simulator_one_movie.png
+  [1]: content/20151217/simulator_no_image.png
+  [2]: content/20151217/simulator_has_image.png
+  [3]: content/20151217/simulator_one_movie.png
