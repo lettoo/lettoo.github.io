@@ -115,5 +115,17 @@
         "post_date": "2016-01-29",
         "summary": "Horizontal Scroll",
         "content_md_url": "content/20160129/horizontal_scroll.md"
+    },
+
+    {
+        "id": 11,
+        "category": "后端",
+        "title": "Python Multiple Process 实例",
+        "slug": "python-multiple-process-demo",
+        "author": "jeffrey-hu",
+        "tags": ["Python", "Multiple Process"],
+        "post_date": "2017-01-08",
+        "summary": "使用multiple.Process来实现Python多线程",
+        "content_md_url": "content/20170108/python_multiple_process_demo.md"
     }
 ]
